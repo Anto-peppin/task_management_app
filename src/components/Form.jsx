@@ -99,6 +99,7 @@ const handleCancel = ()=>{
   
 
   return (
+  <div className='w-full min-h-screen flex items-center justify-center'>
     <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto my-5 bg-gray-200 p-4 rounded-3xl flex flex-col gap-3.5">
       <div className="flex flex-col gap-1 ">
         <label className="text-xl font-bold " htmlFor="title">
@@ -203,6 +204,7 @@ const handleCancel = ()=>{
         </button>
       </div>
     </div>
+  </div>
   );
 };
 

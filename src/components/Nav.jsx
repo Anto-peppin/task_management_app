@@ -46,7 +46,7 @@ const handleAdd = ()=>{
 return(
      <nav className="w-full p-1 bg-black text-white flex px-3 items-center justify-between ">
         <div className="flex items-center gap-1 ">
-            <img className="w-[40px]" src="./logo.webp" alt=""/>
+            <img className="w-10" src="./logo.webp" alt=""/>
             <h1 className="text-2xl ">Task Management App</h1>
         </div>
 
@@ -57,7 +57,7 @@ return(
         </ul>:  <div className="relative " >
             <RiMenu3Line className="cursor-pointer" onClick={()=>setSmallNav(!smallNav)} />
           {
-            smallNav &&   <ul className=" ul scale-0 absolute text-blue-500 text-center font-bold border-2 border-blue-500 top-5   right-5 backdrop-blur-md p-2 " style={{whiteSpace:'nowrap',borderRadius:'10px 0px 10px 10px'}}>
+            smallNav &&   <ul className=" ul scale-0 absolute text-black text-center font-bold border-2 border-gray-500 top-5 right-5 backdrop-blur-2xl p-2 " style={{whiteSpace:'nowrap',borderRadius:'10px 0px 10px 10px'}}>
                 <li className="hover:scale-110 cursor-pointer " onClick={handleHome} >HOME</li>
                 <li className="hover:scale-110 cursor-pointer " onClick={handleAdd}>ADD TASKS</li>
             </ul>

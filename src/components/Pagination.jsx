@@ -34,7 +34,7 @@ const butSty = {
   return (
     <div className='flex justify-center gap-2  mt-5 mb-3 '>
         {
-           new Array(count).fill(0).map((_,ind)=>(
+          count > 1 &&  new Array(count).fill(0).map((_,ind)=>(
             <button onClick={()=>changeValue(ind+1)} style={butSty} key={ind}>{ind+1}</button>
            )) 
 
